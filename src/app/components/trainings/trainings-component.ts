@@ -2,6 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CartService } from '../../services/cart-service';
 import { TrainingModel } from '../../models/training-model.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-trainings',
@@ -12,6 +13,7 @@ import { TrainingModel } from '../../models/training-model.model';
 export class TrainingsComponent implements OnInit {
   listTrainings : TrainingModel[] | undefined;
   cartService = inject(CartService);
+  router = inject(Router);
  contructor(){
  }
 
