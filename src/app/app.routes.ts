@@ -6,7 +6,7 @@ import { CustomerComponent } from './components/customers/customer-component/cus
 import { NotFoundComponent } from './components/not-found/not-found-component/not-found-component';
 
 export const routes: Routes = [
-  {path : 'trainings-component', component : TrainingsComponent}, // Affiche le composant TrainingComponent quand l'URL est /trainings
+  {path : 'trainings', component : TrainingsComponent}, // Affiche le composant TrainingComponent quand l'URL est /trainings
   {path : 'cart', component : CartService}, // Affiche le composant CartComponent lorsque l'URL est /cart
   {path : 'order', component : OrderComponent}, // Affiche le composant OrderComponent lorsque l'URL est /order
   {path : 'customer', component : CustomerComponent}, // Affiche le composant CustomerComponent lorsque l'URL est /customer
