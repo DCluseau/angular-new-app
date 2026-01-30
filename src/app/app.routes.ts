@@ -4,10 +4,11 @@ import{ TrainingsComponent } from './components/trainings/trainings-component';
 import { OrderComponent } from './components/orders/order-component/order-component';
 import { CustomerComponent } from './components/customers/customer-component/customer-component';
 import { NotFoundComponent } from './components/not-found/not-found-component/not-found-component';
+import { CartComponent } from './components/cart/cart-component/cart-component';
 
 export const routes: Routes = [
   {path : 'trainings', component : TrainingsComponent}, // Affiche le composant TrainingComponent quand l'URL est /trainings
-  {path : 'cart', component : CartService}, // Affiche le composant CartComponent lorsque l'URL est /cart
+  {path : 'cart', component : CartComponent}, // Affiche le composant CartComponent lorsque l'URL est /cart
   {path : 'order', component : OrderComponent}, // Affiche le composant OrderComponent lorsque l'URL est /order
   {path : 'customer', component : CustomerComponent}, // Affiche le composant CustomerComponent lorsque l'URL est /customer
   {path : '', redirectTo: 'trainings', pathMatch: 'full'}, // Si l'URL est vide (/), refirige vers /trainings
