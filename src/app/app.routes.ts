@@ -1,8 +1,7 @@
-import { CartService } from './services/cart-service';
 import { Routes } from '@angular/router';
 import{ TrainingsComponent } from './components/trainings/trainings-component';
 import { OrderComponent } from './components/orders/order-component/order-component';
-import { CustomerComponent } from './components/customers/customer-component/customer-component';
+import { CustomerComponent } from './components/customer/customer-component/customer-component';
 import { NotFoundComponent } from './components/not-found/not-found-component/not-found-component';
 import { CartComponent } from './components/cart/cart-component/cart-component';
 
