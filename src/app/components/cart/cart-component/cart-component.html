@@ -13,8 +13,7 @@
             <td>{{cartTraining.name}}</td>
             <td>{{cartTraining.quantity}}</td>
             <td>{{cartTraining.price}}</td>
-            <td><a class="btn bn-danger">Supprimer</a></td>
-            <td><a class="btn btn-success" (click)="onSubmit()">Inscription</a></td>
+            <td><a class="btn btn-danger" (click)="removeFromCart(cartTraining)"> Supprimer </a></td>
           </tr>
         }
         @empty {
@@ -22,6 +21,7 @@
             <td>No items found.</td>
           </tr>
         }
+        <a class="btn btn-success" (click)="onPlaceOrder()">Commander</a>
       </tbody>
     </table>
   </ng-container>

@@ -18,8 +18,16 @@ export class CartComponent implements OnInit{
     this.listCartTrainings = this.cartService.getTraining();
   }
 
+  onSubmit(){
+    this.router.navigateByUrl('customer');
+  }
 
- onSubmit(){
-  this.router.navigateByUrl('customer');
- }
+  removeFromCart(training: TrainingModel): void {
+    this.cartService.removeFromCart(training);
+    this.listCartTrainings = this.cartService.getCartItems();
+  }
+
+  onPlaceOrder(): void {
+    this.router.navigateByUrl('order');
+  }
 }

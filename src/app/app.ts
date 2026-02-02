@@ -11,5 +11,5 @@ import { FormsModule} from '@angular/forms';
 })
 
 export class App {
-  protected readonly title = signal('new-app');
+  protected readonly title = signal('trainings');
 }

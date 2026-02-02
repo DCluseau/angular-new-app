@@ -12,9 +12,9 @@ import { Router } from '@angular/router';
 })
 export class TrainingsComponent implements OnInit {
   listTrainings : TrainingModel[] | undefined;
-  cartService = inject(CartService);
-  router = inject(Router);
- contructor(){
+  // cartService = inject(CartService);
+  // router = inject(Router);
+  constructor(private cartService : CartService, private router : Router){
  }
 
  ngOnInit() : void{
@@ -29,5 +29,4 @@ export class TrainingsComponent implements OnInit {
   this.cartService.addTraining(training);
   this.router.navigateByUrl('cart');
  }
-
 }
