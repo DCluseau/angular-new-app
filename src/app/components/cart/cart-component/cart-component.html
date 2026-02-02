@@ -14,6 +14,7 @@
             <td>{{cartTraining.quantity}}</td>
             <td>{{cartTraining.price}}</td>
             <td><a class="btn bn-danger">Supprimer</a></td>
+            <td><a class="btn btn-success" (click)="onSubmit()">Inscription</a></td>
           </tr>
         }
         @empty {
@@ -23,6 +24,5 @@
         }
       </tbody>
     </table>
-
   </ng-container>
 </div>

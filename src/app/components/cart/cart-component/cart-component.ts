@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { CartService } from '../../../services/cart-service';
 import { TrainingModel } from './../../../models/training-model.model';
 import { Component, OnInit } from '@angular/core';
@@ -10,10 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit{
   listCartTrainings : TrainingModel[] = [];
-  constructor(private cartService: CartService){
+  constructor(private cartService: CartService, private router:Router){
 
   }
   ngOnInit(){
     this.listCartTrainings = this.cartService.getTraining();
   }
+
+
+ onSubmit(){
+  this.router.navigateByUrl('customer');
+ }
 }
